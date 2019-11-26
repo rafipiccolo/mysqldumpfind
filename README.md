@@ -14,7 +14,7 @@ or launch it directly without installing :
 
 # Usage
 
-    node mysqldumpfind <file> <table> <regexp
+    node mysqldumpfind <file> <table> <regexp>
 
 # Exemple
 
