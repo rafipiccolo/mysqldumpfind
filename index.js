@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 
 if (process.argv.length != 5) {
     console.log('Usage: ');
