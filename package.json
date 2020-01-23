@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "Search into a sql dump file (*.sql) to extract an insert statement based on the table and a regexp",
   "scripts": {
-      "test": "mocha",
+      "test": "mocha"
   },
   "bin": {
     "mysqldumpfind": "index.js"
