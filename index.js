@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const zlib = require('zlib');
+
 if (process.argv.length != 5) {
     console.log('Usage: ');
     console.log('  node mysqldumpfind <file> <table> <regexp>');
@@ -14,8 +16,13 @@ var regexp = new RegExp(process.argv[4]);
 // reader
 var fs = require('fs');
 const readline = require('readline');
+
+var inputstream = fs.createReadStream(file);
+if (file.match(/\.gz$/))
+    inputstream = inputstream.pipe(zlib.createGunzip());
+
 const rl = readline.createInterface({
-    input: fs.createReadStream(file),
+    input: inputstream,
     output: null
 });
 

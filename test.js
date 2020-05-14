@@ -14,4 +14,14 @@ describe('check mysqldumpfind', function() {
         });
     });
 
+    it('also from a gz file', function(done) {
+        execFile('node', ['index.js', 'exemple.sql.gz', 'user', '55200'], function(err, stdout, stderr) {
+            console.log(err, stdout, stderr);
+            assert.ifError(err);
+            assert.equal(stderr, '');
+            assert.equal(stdout.trim(), "(55200,'admin','rafi.piccolo@gmail.com','raphael','piccolo')");
+            done();
+        });
+    });
+
 });
