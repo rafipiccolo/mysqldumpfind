@@ -7,19 +7,15 @@ You can also specify a gz file.
 
 Go into a node project and type the following :
 
-    $> npm install mysqldumpfind
-
-or launch it directly without installing :
-
-    $> npx mysqldumpfind file table search
+    $> npm install -g mysqldumpfind
 
 # Usage
 
-    node mysqldumpfind <file> <table> <regexp>
+    mysqldumpfind <file> <table> <regexp>
 
 # Exemple
 
 extract id "55200" from table "user" in file "exemple.sql"
 
-    $ node index.js exemple.sql user 55200
+    $ mysqldumpfind exemple.sql user 55200
     (55200,'admin','rafi.piccolo@gmail.com','raphael','piccolo')
