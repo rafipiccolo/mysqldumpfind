@@ -1,21 +1,21 @@
 {
-  "name": "mysqldumpfind",
-  "version": "1.1.1",
-  "description": "Search into a sql dump file (*.sql) to extract an insert statement based on the table and a regexp",
-  "scripts": {
-    "test": "mocha"
-  },
-  "bin": {
-    "mysqldumpfind": "index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rafipiccolo/mysqldumpfind.git"
-  },
-  "author": "Raphael Piccolo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rafipiccolo/mysqldumpfind/issues"
-  },
-  "homepage": "https://github.com/rafipiccolo/mysqldumpfind#readme"
+    "name": "mysqldumpfind",
+    "version": "1.1.1",
+    "description": "Search into a sql dump file (*.sql) to extract an insert statement based on the table and a regexp",
+    "scripts": {
+        "test": "mocha"
+    },
+    "bin": {
+        "mysqldumpfind": "index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rafipiccolo/mysqldumpfind.git"
+    },
+    "author": "Raphael Piccolo",
+    "license": "ICS",
+    "bugs": {
+        "url": "https://github.com/rafipiccolo/mysqldumpfind/issues"
+    },
+    "homepage": "https://github.com/rafipiccolo/mysqldumpfind#readme"
 }
