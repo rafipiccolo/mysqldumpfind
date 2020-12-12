@@ -1,6 +1,6 @@
 # Description
 
-Search into a sql dump file (*.sql) to extract an insert statement based on the table and a regexp.
+Search into a sql dump file (\*.sql) to extract an insert statement based on the table and a regexp.
 You can also specify a gz file.
 
 # Install

@@ -2,10 +2,9 @@ var assert = require('assert');
 var execFile = require('child_process').execFile;
 
 console.log('test');
-describe('check mysqldumpfind', function() {
-
-    it('find a user where id = 55200', function(done) {
-        execFile('node', ['index.js', 'exemple.sql', 'user', '55200'], function(err, stdout, stderr) {
+describe('check mysqldumpfind', function () {
+    it('find a user where id = 55200', function (done) {
+        execFile('node', ['index.js', 'exemple.sql', 'user', '55200'], function (err, stdout, stderr) {
             console.log(err, stdout, stderr);
             assert.ifError(err);
             assert.equal(stderr, '');
@@ -14,8 +13,8 @@ describe('check mysqldumpfind', function() {
         });
     });
 
-    it('also from a gz file', function(done) {
-        execFile('node', ['index.js', 'exemple.sql.gz', 'user', '55200'], function(err, stdout, stderr) {
+    it('also from a gz file', function (done) {
+        execFile('node', ['index.js', 'exemple.sql.gz', 'user', '55200'], function (err, stdout, stderr) {
             console.log(err, stdout, stderr);
             assert.ifError(err);
             assert.equal(stderr, '');
@@ -23,5 +22,4 @@ describe('check mysqldumpfind', function() {
             done();
         });
     });
-
 });

@@ -17,5 +17,8 @@
     "bugs": {
         "url": "https://github.com/rafipiccolo/mysqldumpfind/issues"
     },
-    "homepage": "https://github.com/rafipiccolo/mysqldumpfind#readme"
+    "homepage": "https://github.com/rafipiccolo/mysqldumpfind#readme",
+    "devDependencies": {
+        "prettier": "^2.2.1"
+    }
 }
