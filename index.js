@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+'use strict';
+
 const zlib = require('zlib');
 
 if (process.argv.length != 5) {

@@ -1,3 +1,5 @@
+'use strict';
+
 var assert = require('assert');
 var execFile = require('child_process').execFile;
 
