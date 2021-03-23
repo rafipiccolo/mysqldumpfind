@@ -1,5 +1,5 @@
-var assert = require('assert');
-var execFile = require('child_process').execFile;
+let assert = require('assert');
+let execFile = require('child_process').execFile;
 
 console.log('test');
 describe('check mysqldumpfind', function () {
