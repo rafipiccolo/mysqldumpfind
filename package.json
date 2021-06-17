@@ -20,6 +20,7 @@
     "homepage": "https://github.com/rafipiccolo/mysqldumpfind#readme",
     "devDependencies": {
         "babel-eslint": "^10.1.0",
-        "prettier": "^2.3.0"
+        "mocha": "^9.0.0",
+        "prettier": "^2.3.1"
     }
 }
